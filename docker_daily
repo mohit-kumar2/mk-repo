@@ -1,0 +1,11 @@
+# Dcoker Commit
+docker commit -m "apache-drill" -a "Mohit" a857fa8fec65 krmohitmail/mk_secret:centos6.8_apache-drill
+docker login
+docker push krmohitmail/mk_secret:centos6.8_apache-drill
+
+
+
+docker run -itd -p 8047:8047 krmohitmail/mk_secret:centos6.8_apache-drill /etc/init.d/apache-drill.sh
+
+
+/etc/init.d/apache-drill.sh
